@@ -1,0 +1,8 @@
+object literal adalah object yang di buat sederhana pada javascript
+
+contoh 
+let data={
+    nama:'ucok'
+}
+// cara akses property pada object literal
+console.log(data.nama) // ouput ucok

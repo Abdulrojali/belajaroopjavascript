@@ -1,0 +1,25 @@
+extends javascript adalah pewarisan methode atau property pada object javascript
+
+contoh :
+class hewan{
+    construktor(nama,jenis){
+        this.nama=nama
+        this.jenis=jenis
+    }
+    deskripsi(){
+        console.log(`nama hewan :${this.nama},jenis hewan ${this.jenis}`)
+    }
+}
+
+class suara extends hewan{
+    suara(){
+        super(nama)
+        console.log(`${nama} bersuara meow meow`)
+    }
+}
+let kucing=new hewan('kucing','anggora')
+console.log(kucing.suara())// ouput kucing bersuara meow meow 
+
+
+contoh di atas adalah penggunaan extends dengan class awal hewan 
+extends di atas mengambil property nama dengan menggunakan keyword super

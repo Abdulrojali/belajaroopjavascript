@@ -1,0 +1,23 @@
+apa itu notasi pada object javascript. notasi adalah sebuah pendekatan pada object 
+2 macam notasi object pada javascript
+
+* notasi titik(dot notation) data.nama
+* notasi tanda kurung[bracket notation] data[nama]
+
+
+1. contoh penggunaan notasi titik dan notasi tanda kurung
+let data={
+    nama:'ucok'
+}
+console.log(data.nama)
+contoh notasi titik di atas digunakan untuk memanggil property nama pada object data
+
+2. contoh penggunaan notasi tanda kurung
+let data={
+    nama:'ucok'
+}
+data['alamat']='perumahan bukit citra asri'
+console.log(data.alamat)// output perumahan bukit citra asri
+
+contoh notasi kurung di atas di gunakan untuk menambah property pada object data
+

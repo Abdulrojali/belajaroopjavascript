@@ -1,0 +1,41 @@
+Berikut adalah beberapa materi tentang objek dalam JavaScript yang disarankan untuk dipelajari:
+
+Pengenalan Objek:
+
+Membuat objek menggunakan literal objek
+Mengakses properti dan metode pada objek
+Mengubah nilai properti pada objek
+Menambahkan properti dan metode baru pada objek
+Pewarisan (Inheritance):
+
+Membuat objek baru dengan mewarisi properti dan metode dari objek yang ada
+Menggunakan Object.create() untuk membuat objek dengan prototype yang ditentukan
+Menerapkan konsep "prototype chaining" dalam pewarisan objek
+Konstruktor dan Prototipe:
+
+Membuat objek menggunakan fungsi konstruktor
+Menambahkan properti dan metode pada prototipe objek
+Menggunakan kata kunci new untuk membuat instance baru dari objek konstruktor
+Properti Objek:
+
+Membaca dan menulis properti objek
+Menggunakan properti komputasi (computed properties)
+Menggunakan properti getter dan setter
+Metode Objek:
+
+Menambahkan metode pada objek
+Menggunakan this untuk merujuk ke objek saat ini dalam metode
+Memahami perbedaan antara metode biasa dan metode panjang (arrow functions)
+Penggunaan this dalam Objek:
+
+Memahami bagaimana this bekerja dalam konteks objek
+Menggunakan metode bind(), call(), dan apply() untuk mengatur konteks this
+Objek Bawaan (Built-in Objects):
+
+Memahami objek bawaan seperti Array, String, Math, dan lainnya
+Menggunakan metode dan properti yang disediakan oleh objek bawaan
+Pemrograman Berorientasi Objek (OOP) dalam JavaScript:
+
+Menerapkan prinsip-prinsip OOP seperti enkapsulasi, pewarisan, dan polimorfisme dalam JavaScript
+Menggunakan kelas dan konstruktor dalam JavaScript (mulai dari ECMAScript 2015)
+Materi-materi di atas memberikan dasar yang baik untuk memahami dan bekerja dengan objek dalam JavaScript. Namun, teruslah menjelajahi dan berlatih menggunakan objek dalam skenario yang lebih kompleks untuk meningkatkan pemahaman Anda.

@@ -1,0 +1,15 @@
+apa itu methode dalam object?
+
+methode adalah function yang terdapat pada object 
+contoh
+
+let data={
+    nama:'rizky',
+    sapa:function(nama){
+        return `halo ${nama} salam kenal`
+    } // ini adalah contoh methode pada object
+}
+
+// akses methode didalam object
+let  rizky=new data()
+console.log(rizky.sapa)

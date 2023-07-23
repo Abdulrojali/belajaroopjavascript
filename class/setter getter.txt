@@ -1,0 +1,57 @@
+1. Setter (set):
+Setter adalah metode khusus dalam class JavaScript yang memungkinkan Anda menetapkan nilai 
+untuk sebuah properti dalam objek. Dengan menggunakan setter, Anda dapat melakukan 
+validasi atau manipulasi data sebelum properti tersebut disimpan.
+
+contoh:
+class PersegiPanjang {
+  constructor(panjang, lebar) {
+    this._panjang = panjang;
+    this._lebar = lebar;
+  }
+
+  set panjang(value) {
+    if (value > 0) {
+      this._panjang = value;
+    } else {
+      console.error("Panjang harus lebih besar dari 0");
+    }
+  }
+
+  set lebar(value) {
+    if (value > 0) {
+      this._lebar = value;
+    } else {
+      console.error("Lebar harus lebih besar dari 0");
+    }
+  }
+}
+
+const objPersegiPanjang = new PersegiPanjang(10, 5);
+objPersegiPanjang.panjang = 15; // Memanggil setter panjang
+objPersegiPanjang.lebar = 0;    // Memanggil setter lebar (akan menampilkan pesan error)
+
+
+2. Getter (get):
+Getter adalah metode khusus dalam class JavaScript yang memungkinkan Anda mengakses 
+nilai dari sebuah properti dalam objek. Dengan menggunakan getter, Anda dapat melakukan 
+operasi tambahan atau manipulasi sebelum mengembalikan nilai properti tersebut.
+Contoh penggunaan getter dalam sebuah class:
+class PersegiPanjang {
+  constructor(panjang, lebar) {
+    this._panjang = panjang;
+    this._lebar = lebar;
+  }
+
+  get luas() {
+    return this._panjang * this._lebar;
+  }
+
+  get keliling() {
+    return 2 * (this._panjang + this._lebar);
+  }
+}
+
+const objPersegiPanjang = new PersegiPanjang(10, 5);
+console.log(objPersegiPanjang.luas);     // Memanggil getter luas
+console.log(objPersegiPanjang.keliling); // Memanggil getter keliling

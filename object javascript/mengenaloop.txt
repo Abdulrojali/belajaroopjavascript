@@ -1,0 +1,11 @@
+apa itu oop
+oop adalah program yang berorientasi pada object/ sub program 
+
+OOP memiliki 4 prinsip, diantaranya yaitu:
+
+Encapsulation atau enkapsulasi;
+Abstraction atau abstraksi;
+Inheritance atau pewarisan; dan
+Polymorphism.
+
+

@@ -1,0 +1,44 @@
+Di JavaScript, kata kunci extends digunakan untuk membuat pewarisan atau inheritance 
+antara dua kelas. Ketika Anda mendefinisikan kelas baru dengan menggunakan extends,
+ kelas baru tersebut akan mewarisi properti dan metode dari kelas yang sudah ada, 
+ yang disebut kelas induk atau superclass.
+ class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    // Memanggil constructor kelas induk menggunakan "super"
+    super(name);
+    this.breed = breed;
+  }
+
+  speak() {
+    // Override metode speak() kelas induk
+    console.log(`${this.name} barks.`);
+  }
+
+  fetch() {
+    console.log(`${this.name} fetches a ball.`);
+  }
+}
+
+const dog1 = new Dog("Buddy", "Golden Retriever");
+dog1.speak(); // Output: Buddy barks.
+dog1.fetch(); // Output: Buddy fetches a ball.
+Dalam contoh di atas, kita memiliki dua kelas, yaitu Animal dan Dog. 
+Kelas Dog mewarisi dari kelas Animal dengan menggunakan kata kunci extends. 
+Ini berarti bahwa Dog akan memiliki semua properti dan metode dari Animal.
+
+Ketika kelas anak memiliki konstruktor, itu harus memanggil super() yang berfungsi 
+sebagai pemanggil konstruktor kelas induk. Dalam contoh di atas, konstruktor kelas Dog 
+memanggil konstruktor kelas Animal menggunakan super(name).
+
+Kita juga bisa meng-overwrite metode yang diwarisi dari kelas induk. Dalam contoh di atas,
+ metode speak() pada kelas Dog meng-overwrite metode speak() pada kelas Animal.

@@ -1,0 +1,56 @@
+Class adalah sebuah blueprint (cetakan) 
+atau krangka dari sebuah sebuah objek berdasarkan klasifiksi objek tersebut.
+
+contoh :
+class mahasiswa{
+    construktor(nama,id,alamat,usia){
+        this.nama=nama
+        this.id=id
+        this.alamat=alamat
+        this.usia=usia
+    }
+    welcome(){
+        let {nama,alamat,id,usia}=this
+        console.log(`haloo ${nama},dengan alamat ${alamat},dengan id ${id},berumur ${usia}`)
+    }
+}
+let rizky=new mahasiswa('rizky',1152,'sukabumi',19)
+console.log(rizky)
+console.log(rizky.welcome())
+
+bagian bagian dalam class javascript
+1. Constructor
+special method yang dieksekusi sebelum method yang lain.
+
+2. Field
+variable yang dideklarasikan di dalam class.
+
+3. Method
+function yang dideklarasikan di dalam class.
+
+4. Getter/Setter
+method yang digunakan untuk mengakses value dan mengubah value di dalam class.
+
+class Dino {
+  //constructor
+  constructor(name, age, weight) {
+    this.name = name;
+    this.age = age;
+    this.weight = weight;
+  }
+
+  // getter
+  get name() {
+    return this.name;
+  }
+
+  // setter
+  set name(newName) {
+    this.name = newName
+  }
+
+  // method 
+  greeting() {
+    console.log(`Hi my name is ${this.name}`);
+  }
+}

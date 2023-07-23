@@ -1,0 +1,19 @@
+Dalam JavaScript, object constructor adalah sebuah fungsi khusus yang digunakan untuk 
+membuat dan menginisialisasi objek baru. Constructor digunakan bersama dengan kata kunci "new"
+ untuk membuat instance (instansi) dari sebuah objek.
+
+ contoh:
+ // Object constructor untuk membuat objek Book
+function Book(title, author, year) {
+  this.title = title;
+  this.author = author;
+  this.year = year;
+}
+
+// Membuat instance objek menggunakan constructor
+var book1 = new Book("Harry Potter", "J.K. Rowling", 2001);
+var book2 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+
+// Mengakses properti objek
+console.log(book1.title);  // Output: Harry Potter
+console.log(book2.author); // Output: F. Scott Fitzgerald

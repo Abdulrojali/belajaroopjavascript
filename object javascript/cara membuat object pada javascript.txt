@@ -1,0 +1,33 @@
+1. cara membuat object pada javascript
+
+let mobil={
+    namaMobil:'brio',
+    harga:'RP.120.000.000,00',
+    warna:'putih'
+}
+ contoh di atas adalah cara membuat object
+object yang di buat ialah mobil dengan propertinya ada namamobil,harga,dan warna.
+sedangkan isi nya ada brio,120.000,dan putih
+
+
+2. cara memanggil object yang telah di buat
+console.log(mobil.namaMobil)// output 'brio'
+
+3.cara mengganti value pada property dalam object
+mobil.namaMobil='mazda'
+console.log(mobil.namaMobil)// ouput 'mazda'
+
+
+4. didalam object juga kita dapat membuat sebuah function menjadi method
+contoh
+let mobil={
+      namaMobil:'brio',
+    harga:'RP.120.000.000,00',
+    warna:'putih',
+    maju:function(){
+        console.log('mobile sedang melaju')
+    } 
+}
+
+ cara memanggil methode yang telah di buat dalam object
+console.log(mobil.maju())

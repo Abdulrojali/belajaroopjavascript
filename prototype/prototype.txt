@@ -1,0 +1,7 @@
+prototype adalah nilai dalam object
+contoh
+
+let data={
+    nama:'abdul' // ini adalah contoh prototype
+}
+didalam object dapat terdapat prototype nama dengan nilai nya abdul
